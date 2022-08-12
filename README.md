@@ -1,2 +1,2 @@
-# spring-cloud-imagenes
-Spring Cloud Imagenes
+# spring-cloud
+Spring Cloud
