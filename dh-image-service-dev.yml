@@ -1,0 +1,3 @@
+server:
+  port: ${PORT:8888}
+image: https://sitios.mineduc.cl/lenguajesdigitales/img/code-int.jpg
