@@ -1,3 +1,19 @@
 server:
   port: ${PORT:8885}
+  
 image: https://sitios.mineduc.cl/lenguajesdigitales/img/code-int.jpg
+
+management:
+  info:
+    env:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+
+info:
+  app:
+    name: image-service
+    description: Image Service created for Class 6
+    version: 1.0.0
