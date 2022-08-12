@@ -1,3 +1,3 @@
 server:
-  port: ${PORT:8888}
+  port: ${PORT:8885}
 image: https://miracomosehace.com/wp-content/uploads/2020/06/code-inicio.jpg
