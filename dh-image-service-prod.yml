@@ -1,3 +1,19 @@
 server:
   port: ${PORT:8885}
+  
 image: https://miracomosehace.com/wp-content/uploads/2020/06/code-inicio.jpg
+
+management:
+  info:
+    env:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+
+info:
+  app:
+    name: image-service
+    description: Image Service created for Class 6
+    version: 1.0.0
