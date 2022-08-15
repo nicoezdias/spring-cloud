@@ -19,8 +19,3 @@ info:
     name: subscription-service
     description: Subscription Service created for Class 6
     version: 1.0.0
-
-
-spring.sql.init.data-locations=classpath:subscription.sql
-spring.jpa.defer-datasource-initialization=true
-spring.jpa.hibernate.ddl-auto=create-drop
