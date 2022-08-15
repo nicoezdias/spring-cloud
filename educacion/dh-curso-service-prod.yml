@@ -1,0 +1,19 @@
+server:
+  port: ${PORT:8086}
+ 
+spring:
+  datasource:
+    driverClassName: org.h2.Driver
+    url: jdbc:h2:~/dbCurso
+    username: sa
+    password: 
+  jpa: 
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: create-drop
+      
+info:
+  app:
+    name: subscription-service
+    description: Subscription Service created for Class 6
+    version: 1.0.0
