@@ -2,18 +2,25 @@ server:
   port: ${PORT:8085}
  
 spring:
+  datasource:
+    driver-class-name: org.h2.Driver
+    url: jdbc:h2:mem:db;DB_CLOSE_DELAY=-1
+    username: sa
+    password: sa
+  sql:
+    init.data-locations: classpath:subscription.sql
   jpa: 
-    database-platform: org.hibernate.dialect.H2Dialect
+    defer-datasource-initialization: org.hibernate.dialect.H2Dialect
     hibernate:
       ddl-auto: create-drop
-  datasource:
-    driverClassName: org.h2.Driver
-    url: jdbc:h2:~/dbSubscription
-    username: sa
-    password: 
 
 info:
   app:
     name: subscription-service
     description: Subscription Service created for Class 6
     version: 1.0.0
+
+
+spring.sql.init.data-locations=classpath:subscription.sql
+spring.jpa.defer-datasource-initialization=true
+spring.jpa.hibernate.ddl-auto=create-drop
