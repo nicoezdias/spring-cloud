@@ -8,14 +8,14 @@ spring:
         - name: CountFilter
       routes:
         - id: userRoute
-          uri: http://localhost:8082/
+          uri: http://localhost:8082
           predicates:
             - Path=/users/**
           filters:
             - AddRequestHeader=user-request-header, testing-headers
             - AddResponseHeader=user-response-header, testing-response-header
         - id: productRoute
-          uri: http://localhost:8085/
+          uri: http://localhost:8085
           predicates:
             - Path=/products/**
 
