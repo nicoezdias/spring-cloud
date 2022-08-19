@@ -3,6 +3,6 @@ server:
 
 info:
   app:
-    name: user-service
-    description: User Service created for Class 8
+    name: product-service
+    description: Product Service created for Class 8
     version: 1.0.0
