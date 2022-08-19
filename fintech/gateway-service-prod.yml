@@ -1,0 +1,31 @@
+server:
+  port: ${PORT:8080}
+
+spring:
+  cloud:
+    gateway:
+      default-filters:
+        - name: CountFilter
+      routes:
+        - id: userRoute
+          uri: user-service
+          predicates:
+            - Path=/users/**
+          filters:
+            - AddRequestHeader=user-request-header, testing-headers
+            - AddResponseHeader=user-response-header, testing-response-header
+        - id: productRoute
+          uri: product-service
+          predicates:
+            - Path=/products/**
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,gateway
+info:
+  app:
+    name: gateway-service
+    description: Gateway Service created for Class 8
+    version: 1.0.0
