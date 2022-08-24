@@ -18,5 +18,5 @@ spring:
 info:
   app:
     name: library-service
-    description: Library Service created for Class 9
+    description: Library Service created for Class 10
     version: 1.0.0

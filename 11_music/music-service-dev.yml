@@ -9,7 +9,7 @@ spring:
     password: sa
   sql:
     init:
-      data-locations: classpath:games.sql
+      data-locations: classpath:music.sql
   jpa:
     defer-datasource-initialization: true
     hibernate:
@@ -17,6 +17,7 @@ spring:
 
 info:
   app:
-    name: games-service
-    description: Games Service created for Class 10
+    name: music-service
+    description: Music Service created for Class 11
     version: 1.0.0
+    server:

@@ -22,5 +22,5 @@ management:
 info:
   app:
     name: gateway-service
-    description: Gateway Service created for Class 9
+    description: Gateway Service created for Class 10
     version: 1.0.0

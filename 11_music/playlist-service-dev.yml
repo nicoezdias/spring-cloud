@@ -1,0 +1,8 @@
+server:
+  port: 8084
+      
+info:
+  app:
+    name: playlist-service
+    description: Playlist Service created for Class 11
+    version: 1.0.0

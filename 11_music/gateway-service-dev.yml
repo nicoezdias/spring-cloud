@@ -1,0 +1,26 @@
+server:
+  port: 8080
+  
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: musicRoute 
+          uri: lb://music-service 
+          predicates: 
+            - Path=/musics/**
+        - id: playlistRoute 
+          uri: lb://playlist-service 
+          predicates: 
+            - Path=/playlists/**
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,gateway
+info:
+  app:
+    name: gateway-service
+    description: Gateway Service created for Class 11
+    version: 1.0.0
