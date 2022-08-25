@@ -5,7 +5,7 @@ spring:
   cloud:
     gateway:
       default-filters:
-        - name: CountFilter
+        - name: InfoFilter
       routes:
         - id: movieRoute 
           uri: lb://movie-service 
