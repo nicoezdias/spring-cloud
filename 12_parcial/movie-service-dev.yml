@@ -20,4 +20,3 @@ info:
     name: movie-service
     description: Movie Service created for Parcial
     version: 1.0.0
-    server:
