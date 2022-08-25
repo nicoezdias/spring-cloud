@@ -5,14 +5,14 @@ spring:
   cloud:
     gateway:
       routes:
-        - id: musicRoute 
-          uri: lb://music-service 
+        - id: movieRoute 
+          uri: lb://movie-service 
           predicates: 
-            - Path=/musics/**
-        - id: playlistRoute 
-          uri: lb://playlist-service 
+            - Path=/movies/**
+        - id: catalogRoute 
+          uri: lb://catalog-service 
           predicates: 
-            - Path=/playlists/**
+            - Path=/catalogs/**
 
 management:
   endpoints:
